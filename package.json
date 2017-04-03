@@ -1,0 +1,19 @@
+{
+  "name": "project_3",
+  "version": "1.0.0",
+  "description": "howl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeabood/project_3.git"
+  },
+  "author": "Michael Abood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeabood/project_3/issues"
+  },
+  "homepage": "https://github.com/mikeabood/project_3#readme"
+}
