@@ -5,9 +5,9 @@ require './controllers/HomeController'
 # require './controllers/UserController'
 # require './controllers/ArtistController'
 
-# require './models/UserModel'
-# require './models/ArtistModel'
-# require './models/CommentModel'
+require './models/UserModel'
+require './models/ArtistModel'
+require './models/CommentModel'
 
 map('/') {run AppController}
 map('/home') {run HomeController}

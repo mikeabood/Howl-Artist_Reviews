@@ -37,14 +37,16 @@ class HomeController < AppController
 
 		user = User.find_by(username: username)
 		if user && user.authenticate(password)
+			puts "lets login"
 			session[:logged_in] = true
 			session[:username] = username
 			session[:user_id] = user.id 
+			puts session
 
 			redirect '/home'
 		else
 			@message = "Login Unsuccessful"
-			erb :login
+			erb :register
 		end
 	end
 
