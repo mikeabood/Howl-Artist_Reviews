@@ -2,11 +2,13 @@ class ArtistController < AppController
 
 	get '/' do
 		@artists = Artist.all
+		erb :artist
 	end
 
 
-	get '/:'
+	get '/artist' do
+		erb :artist
 
-
+end
 
 end

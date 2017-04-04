@@ -1,0 +1,9 @@
+body {
+	background-color: grey; 
+}
+
+.posts {
+
+	float: right;
+	margin-right: 30%; 
+}
