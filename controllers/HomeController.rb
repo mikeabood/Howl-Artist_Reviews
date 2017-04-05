@@ -1,5 +1,6 @@
 class HomeController < AppController
 
+
 	get '/' do
 		p session
 		if session[:logged_in]
@@ -13,15 +14,11 @@ class HomeController < AppController
 	end
 
 
-
 	get '/login' do
+	
 		erb :login
 	end
 
-
-	get '/register' do
-		erb :register
-	end
 
 
 	get '/logout' do
@@ -48,6 +45,13 @@ class HomeController < AppController
 			@message = "Login Unsuccessful"
 			erb :register
 		end
+	end
+
+
+
+
+	get '/register' do
+		erb :register
 	end
 
 

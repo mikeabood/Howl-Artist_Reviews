@@ -6,9 +6,18 @@ class ArtistController < AppController
 	end
 
 
-	get '/artist' do
+	get '/:id' do
+		id = params[:id]
+		@artist = Artist.find(id)
+		
+
 		erb :artist
 
-end
+	end
+
+
+	post '/' do
+		erb :artist
+	end
 
 end

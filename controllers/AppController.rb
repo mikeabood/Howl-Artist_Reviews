@@ -11,7 +11,7 @@ class AppController < Sinatra::Base
 
 
 	set :views, File.expand_path('../../views', __FILE__)
-	set :public, File.expand_path('../../public', __FILE__)
+	set :public_dir, File.expand_path('../../public', __FILE__)
   	set :session_secret, 'test'
 
 	not_found do

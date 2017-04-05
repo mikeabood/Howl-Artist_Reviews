@@ -1,9 +1,16 @@
 body {
-	background-color: grey; 
+	background-color: rgba(231, 231, 251, 0.8); 
 }
 
 .posts {
 
 	float: right;
-	margin-right: 30%; 
+	margin-right: 40%; 
+	margin-top: -40px; 
 }
+
+ul {
+
+	list-style-type: none; 
+}
+
