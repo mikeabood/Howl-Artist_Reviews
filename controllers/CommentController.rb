@@ -12,7 +12,7 @@ class CommentController < AppController
     erb :user_comments
   end
 
-  post '/' do
+  post '/comm' do
     @comment = Comment.new
     @comment.content = params["content"]
     @comment.user_id = session[:user_id]

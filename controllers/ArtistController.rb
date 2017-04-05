@@ -1,8 +1,14 @@
 class ArtistController < AppController
 
 	get '/' do
-		puts params[:artist]
-	
+		# puts params[:artist]
+		artist_name = params[:artist]
+		
+		artist = Artist.find_by(name: artist_name).id
+		# p artist 
+		# p 'artist is above'
+		redirect "/artist/#{artist}"
+
 
 	
 	end
@@ -12,23 +18,22 @@ class ArtistController < AppController
 		id = params[:id]
 		@artist = Artist.find(id)
 		
-
 		erb :artist
-
 	end
 
 
 	post '/' do
-		
-		artist_name = params[:artist]
-		
-		artist = Artist.find_by(name: artist_name).id
-		# p artist 
-		# p 'artist is above'
-		redirect "/artist/#{artist}"
+		@comment = Comment.new
+		@comment.comment = params[:comment]
+		@comment.artist_id = params[:artist_id]
+		@comment.user_id = params[:user_id]
+		@comment.save
+
 	end
 
-	
-	
+
+
+
+
 
 end
