@@ -1,8 +1,10 @@
 class ArtistController < AppController
 
 	get '/' do
-		@artists = Artist.all
-		erb :artist
+		puts params[:artist]
+	
+
+	
 	end
 
 
@@ -17,7 +19,16 @@ class ArtistController < AppController
 
 
 	post '/' do
-		erb :artist
+		
+		artist_name = params[:artist]
+		
+		artist = Artist.find_by(name: artist_name).id
+		# p artist 
+		# p 'artist is above'
+		redirect "/artist/#{artist}"
 	end
+
+	
+	
 
 end
