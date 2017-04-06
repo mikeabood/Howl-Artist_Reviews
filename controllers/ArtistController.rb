@@ -26,8 +26,10 @@ class ArtistController < AppController
 		@comment = Comment.new
 		@comment.comment = params[:comment]
 		@comment.artist_id = params[:artist_id]
-		@comment.user_id = params[:user_id]
+		@comment.user_id = session[:user_id]
 		@comment.save
+
+
 
 	end
 
