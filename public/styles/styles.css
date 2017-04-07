@@ -10,6 +10,7 @@
 .header {
   height: 150px;
   width: 1400px;
+  color: white;
   background-color: grey;
   font-family: 'Sigmar One', cursive;
   align-items: center;
@@ -70,4 +71,9 @@
 }
 .un {
   color: white;
+}
+.home {
+  width: 1400px;
+  height: 100%;
+  text-align: center;
 }
