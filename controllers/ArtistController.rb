@@ -29,7 +29,7 @@ class ArtistController < AppController
 		@comment.user_id = session[:user_id]
 		@comment.save
 
-
+		redirect "/artist/#{@comment.artist_id}"
 
 	end
 

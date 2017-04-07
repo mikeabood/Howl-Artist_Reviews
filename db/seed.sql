@@ -2,6 +2,7 @@
 
 \c howl
 
+ 
 INSERT INTO artists (name, genre, picture) VALUES ('J Cole','Hip-Hop', 'http://s3.amazonaws.com/hiphopdx-production/2013/05/J.-Cole_05-30-2013.jpg'); 
 INSERT INTO artists (name, genre, picture) VALUES ('Logic','Hip-Hop', 'http://www.fashionably-early.com/wp-content/uploads/logic-third-album-1160x870.jpg.pagespeed.ce.SQzwQAR5wR.jpg');
 INSERT INTO artists (name, genre, picture) VALUES ('Kendrick Lamar','Hip-Hop', 'https://ds2qmv2z5ilrv.cloudfront.net/wp-content/uploads/Kendrick-Lamar-Chris-Buck.jpeg');
@@ -13,4 +14,5 @@ INSERT INTO artists (name, genre, picture) VALUES ('Slightly Stoopid', 'Reggae/R
 INSERT INTO artists (name, genre, picture) VALUES ('Sublime','Reggae/Rock', 'http://sublimewiki.com/images/a/a0/Sublime_sun.gif');
 INSERT INTO artists (name, genre, picture) VALUES ('Rebelution','Reggae/Rock','http://s1.ticketm.net/tm/en-us/dam/a/a16/35b7ff8e-7858-4bf2-b368-2c43b683ca16_78811_CUSTOM.jpg');
 INSERT INTO artists (name, genre, picture) VALUES ('Iration','Reggae/Rock', 'http://media.independent.com/img/bands/leadart/SBBandsWeb_Iration_t479.jpg?ad14627618f647f3902aa65ed5ac8237c798b1ef');
+INSERT INTO artists (name, genre, picture) VALUES ('Donald Trump','President', 'http://i.ndtvimg.com/i/2017-04/donald-trump-reuters_650x400_71491514392.jpg');
 

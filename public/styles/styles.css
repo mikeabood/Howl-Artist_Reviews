@@ -1,0 +1,70 @@
+.parent {
+  height: 100%;
+  width: 1000px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #c0c0c0;
+}
+.header {
+  height: 150px;
+  width: 1400px;
+  background-color: grey;
+  font-family: 'Sigmar One', cursive;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d6dfcd' fill-opacity='0.43' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  background: none;
+  background-color: lightgrey;
+  width: 1400px;
+}
+.left {
+  background-color: grey;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  padding: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d6dfcd' fill-opacity='0.43' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.posts {
+  width: 50%;
+  margin: 10px;
+  background-color: grey;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0;
+  list-style-type: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d6dfcd' fill-opacity='0.43' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.submit {
+  display: flex;
+  flex-grow: 1;
+  height: 50px;
+  align-self: flex-end;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.input input {
+  width: 600px;
+  height: 30px;
+}
+.input {
+  justify-content: center;
+}
+.comments {
+  align-self: center;
+  padding: 40px;
+}
+.log {
+  width: 1400px;
+  padding-top: 100px;
+  padding-left: 50px;
+}
