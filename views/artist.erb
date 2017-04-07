@@ -32,7 +32,7 @@
 
 <div class="comments"> 
 	<% @artist.comments.each do |comment| %>
-		<li> <h5><%= comment.user.username%></h5> <h3><%= comment.comment %></h3></li> 
+		<li> <h5 class="un"><%= comment.user.username%> - </h5>  <h3><%= comment.comment %></h3></li> 
 	<% end %>
 
 </div>
