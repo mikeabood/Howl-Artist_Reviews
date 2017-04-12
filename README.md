@@ -16,9 +16,9 @@ The goal is to allow users to view other peoples experiences at live shows.
 
 Technologies used are:
 
-Sinatra
-Ruby
-Javascript
-HTML
-LESS
+Sinatra,
+Ruby,
+Javascript,
+HTML,
+LESS,
 GULP
