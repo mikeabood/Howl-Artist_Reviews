@@ -1,34 +1,18 @@
-<!-- <div class="header">
-<img src="http://www.free-icons-download.net/images/microphone-logo-icon-63245.png" height="50px" width="50px">
-<h1>HOWL - Rate your artists, LIVE!</h1>
-
-<form action="/artist" method="GET">
-
-<input type="text" name="artist" placeholder="Search .."/>
-
-<button> Search </button>
-
-</form>
-</div> -->
-
-
-
-
 <!-- holding the middle columns -->
 <div class="main">
 
 <!-- Left column with artist info -->
-<ul class="left">
+<div class="left">
 
-<img src="<%= @artist.picture %>" height="200px" width="200px" border="2px"/>
-<li> <h2> <%= @artist.name %> </h2> </li>
-<li> <%= @artist.genre %> </li>
+	<img id="image" src="https://i.scdn.co/image/03c8ffa01ce66c2ab342ef3d0ce96b4ae12ec068"/>
+		
+		<h1 id="name"> Artist Name </h1>
+		<h2 id="genre"> Genre </h2>
 
-</ul>
-
+</div>
 
 <!-- Holding user posts in right column-->
-<ul class="posts"> 
+<div class="posts"> 
 
 <div class="comments"> 
 	<% @artist.comments.each do |comment| %>
@@ -45,7 +29,7 @@
 <form action="/artist" method="POST">
 	<input type="text" name="comment" placeholder="Add a comment" />
 	
-	<input type="hidden" name="artist_id" value=" <%= @artist.id %>" placeholder="Add a comment"/>
+	<input type="hidden" name="artist_id" value="<%= @artist.id %>" placeholder="Add a nt"/>
 
 	<button> Post </button>
 
@@ -53,18 +37,10 @@
 </div>
 </div>
 
-</ul>
-
-
-
 </div>
 
 
 
-
-
-
-
-
+</div>
 
 

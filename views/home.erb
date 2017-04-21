@@ -1,14 +1,39 @@
-<div class="home"> 
+<div class="header">
+	<div id="search-bar">
+		<form id="search" action="/artist" method="GET">
+			<input class="artist" type="text" name="artist" placeholder="Search .."/>
+			<button id="button"> Search </button>
+		</form>
+	</div>
+</div>
 
-<h1> howl. </h1>
+<div class="right"> 
+		<div class="artist-info">
+			<img id="image" src="" height="250px" width="300px" border="2px"/>
+			<h1 id="name" > </h1>
+			<h2 id="genre"> </h2>
+		</div>
 
-<h3> Rate your artist LIVE </h3>
-<form action="/artist" method="GET">
-
-<input type="text" name="artist" placeholder="Search .."/>
-
-<button> Search </button>
-
-</form>
+		<!-- Holding user posts in right column-->
+<div class="posts"> 
+	<div class="comments"> 
+		<ul class="coms">
+		</ul>
+	</div>
+</div>
 
 </div>
+
+<!-- Submition form under user posts-->
+<div class="submit">
+	<div class="input">
+		<form id="form" action="/artist" method="POST">
+			<input id="comment" type="text" name="comment" placeholder="Add a comment" />
+			<input type="hidden" name="artist_id" id="artist" value="" placeholder="Add d comment"/>
+			<button class="comment-button"> Post </button>
+		</form>
+	</div>
+</div>
+
+
+
