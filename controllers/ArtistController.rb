@@ -2,16 +2,14 @@ class ArtistController < AppController
 
 	get '/' do
 		# puts params[:artist]
-		artist_name = params[:artist]
+		# artist_name = params[:artist]
 		
-		artist = Artist.find_by(name: artist_name).id
-		# p artist 
-		# p 'artist is above'
-		redirect "/artist/#{artist}"
+		# artist = Artist.find_by(name: artist_name).id
 
-
-	
+		# redirect "/artist/#{artist}"
+		erb :artist
 	end
+
 
 
 	get '/:id' do
@@ -29,7 +27,7 @@ class ArtistController < AppController
 		@comment.user_id = session[:user_id]
 		@comment.save
 
-		redirect "/artist/#{@comment.artist_id}"
+		@comment.to_json(:include => :user)
 
 	end
 

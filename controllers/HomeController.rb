@@ -8,7 +8,7 @@ class HomeController < AppController
 
 			erb :home
 		else
-			@message = "You are not logged in!"
+			# @message = "You are not logged in!"
 			erb :login
 		end
 	end
@@ -34,7 +34,6 @@ class HomeController < AppController
 
 		user = User.find_by(username: username)
 		if user && user.authenticate(password)
-			puts "lets login"
 			session[:logged_in] = true
 			session[:username] = username
 			session[:user_id] = user.id 
@@ -62,8 +61,9 @@ class HomeController < AppController
     	user.username = params["username"]
     	user.password = params["password"]
     	user.save
-
+    	
     	redirect '/home/login'
+    	erb :login
   	end
 end
 

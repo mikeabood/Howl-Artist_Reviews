@@ -19,6 +19,8 @@ Technologies used are:
 Sinatra,
 Ruby,
 Javascript,
+jQuery,
+AJAX, 
 HTML,
 LESS,
 GULP
